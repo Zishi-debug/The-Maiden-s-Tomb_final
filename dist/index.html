@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Imporant meta information to make the page as rigid as possible on mobiles, to avoid unintentional zooming on the page itself  -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Maiden's Tomb </title>
+   
+</head>
+    
+
+<body class="cda-alignright cda-naked cda-noimg">
+<div id="myPopup" class="popup">
+    <div class="popup-content">
+        <h1 style="color:rgb(255, 0, 0); ">
+                Don't leave the </br>SCREEN!！
+            </h1>
+            <img src="./models/bigposter_still.png" alt="Cinque Terre" width="328" height="480">
+        <h3 style="color:rgb(255, 255, 255);">Keep your eyes on me</h3>
+        
+    </div>
+</div>
+<div class="wrapper">
+    <!-- The canvas element is used to draw the 3D scene -->
+    <div class="mask1" style="z-index: 0">
+ 
+    <canvas id="c"></canvas>
+   
+   
+    </div>
+</div>
+
+ <!-- just follow the link in a web browser to copy the code into a local javascript file -->
+ <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+ <script type="importmap">
+ {
+	 "imports": {
+	 "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+	 "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+	 }
+ }
+ </script>
+
+<!-- my js -->
+<script type="module" src="./main.js"></script>
+ <!-- <span class="action">Click me</span> -->
+ 
+</body>
+
+
+
+
+
+</html>
+
